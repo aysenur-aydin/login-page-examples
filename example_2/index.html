@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="flex item-center justify-center min-h-screen bg-gray-100">
+      <div
+        class="relative flex flex-col justify-center m-6 space-y-8 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0"
+      >
+        <div class="flex flex-col justify-center p-8 md:p-14">
+          <span class="mb-3 text-4xl font-bold">Welcome back</span>
+          <span class="font-light text-gray-400 mb-8"
+            >Welcome back! Please enter your details</span
+          >
+          <div class="py-4">
+            <span class="mb-2 text-md">Email</span>
+            <input
+              type="text"
+              class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"
+              name="email"
+              id="email"
+            />
+          </div>
+          <div class="flex justify-between w-full py-4">
+            <div class="mr-24">
+              <input type="checkbox" name="ch" id="ch" class="mr-2" />
+              <span class="text-md">Remember for 30 days</span>
+            </div>
+            <span class="font-bold text-md">Forgot password</span>
+          </div>
+          <button
+            class="w-full bg-black text-white p-2 rounded-lg mb-6 hover:bg-white hover:text-black hover:border hover:border-gray-300"
+          >
+            Sign in
+          </button>
+          <button
+            class="w-full border border-gray-300 text-md p-2 rounded-lg mb-6 hover:bg-black hover:text-white"
+          >
+            <img src="google.svg" alt="img" class="w-6 h-6 inline mr-2" />
+            Sign in with Google
+          </button>
+          <div class="text-center text-gray-400">
+            Don't have an account?
+            <span class="font-bold text-black"> Sign up for free </span>
+          </div>
+        </div>
+
+        <!--  RIGHT SIDE  -->
+        <figure
+          class="group block relative float-left overflow-hidden hover:opacity-100 hover:bottom-0 before:content-['?'] before:absolute before:font-extrabold before:bg-black before:bg-white before:bg-opacity-75 before:opacity-75 before:drop-shadow-[0_0_5px_rgba(255,255,255)] before:text-black before:w-6 before:h-6 before:rounded-xl before:text-center before:text-sm before:leading-6 before:transition before:ease-in-out before:opacity-75 hover:before:opacity-0 before:top-2.5 before:left-2.5"
+        >
+          <img
+            src="annie-spratt-90Zp9h6mamw-unsplash.jpg"
+            alt="img"
+            class="w-[400px] h-full hidden rounded-r-2xl md:block object-cover"
+          />
+          <figcaption
+            class="absolute bg-black bg-opacity-75 text-white py-2.5 px-5 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 left-0 top-[-30%] group-hover:top-0"
+          >
+            Photo by
+            <a
+              href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Annie Spratt</a
+            >
+            on
+            <a
+              href="https://unsplash.com/photos/90Zp9h6mamw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Unsplash</a
+            >
+          </figcaption>
+
+          <!-- text on image -->
+          <div
+            class="absolute hidden bottom-7 left-5 right-5 p-7 bg-white bg-opacity-30 backdrop-blur-sm rounded text-center drop-shadow-lg md:block"
+          >
+            <span class="text-neutral-700 text-xl">
+              “All the flowers of the tomorrows are in the seeds of today.”
+            </span>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </body>
+</html>
